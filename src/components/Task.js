@@ -10,7 +10,6 @@ import '../styles/taskItem.css';
 function Task({ task, onCorrect, resetSignal }) {
   const [answer, setAnswer] = React.useState('');
   const [isCorrect, setIsCorrect] = React.useState(false);
-  const [isListening, setIsListening] = React.useState(false);
 
   const recognitionRef = React.useRef(null);
 
@@ -34,9 +33,6 @@ function Task({ task, onCorrect, resetSignal }) {
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
 
-    recognition.onstart = () => setIsListening(true);
-    recognition.onend = () => setIsListening(false);
-
     recognition.onresult = (event) => {
       const transcript = event.results[0][0].transcript;
       setAnswer(transcript);
@@ -45,7 +41,6 @@ function Task({ task, onCorrect, resetSignal }) {
 
     recognition.onerror = (event) => {
       console.error('Speech recognition error', event.error);
-      setIsListening(false);
     };
 
     recognitionRef.current = recognition;
