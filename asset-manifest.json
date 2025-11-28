@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/risovanie/static/css/main.41ac5593.css",
-    "main.js": "/risovanie/static/js/main.dddfa319.js",
+    "main.js": "/risovanie/static/js/main.4839da69.js",
     "static/js/453.d37bcb50.chunk.js": "/risovanie/static/js/453.d37bcb50.chunk.js",
     "index.html": "/risovanie/index.html",
     "main.41ac5593.css.map": "/risovanie/static/css/main.41ac5593.css.map",
-    "main.dddfa319.js.map": "/risovanie/static/js/main.dddfa319.js.map",
+    "main.4839da69.js.map": "/risovanie/static/js/main.4839da69.js.map",
     "453.d37bcb50.chunk.js.map": "/risovanie/static/js/453.d37bcb50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41ac5593.css",
-    "static/js/main.dddfa319.js"
+    "static/js/main.4839da69.js"
   ]
 }
