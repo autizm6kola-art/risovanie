@@ -2,7 +2,7 @@
 
 import { supabase } from './supabaseClient';  // импорт клиента Supabase (предполагается, что он есть)
 
-const STORAGE_PREFIX = "istorii_kogda_"; // можно поменять на любое название для конкретного приложения
+const STORAGE_PREFIX = "istorii_risovanie_"; // можно поменять на любое название для конкретного приложения
 
 // Флаг: false — используем localStorage, true — Supabase
 const USE_SUPABASE = false;  // переключай на true, когда будешь готова к работе с Supabase
