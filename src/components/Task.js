@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   getSavedAnswer,
@@ -70,18 +68,6 @@ function Task({ task, onCorrect, resetSignal }) {
     }
   };
 
-  const handleVoiceStart = () => {
-    if (recognitionRef.current && !isListening) {
-      recognitionRef.current.start();
-    }
-  };
-
-  const handleVoiceStop = () => {
-    if (recognitionRef.current && isListening) {
-      recognitionRef.current.stop();
-    }
-  };
-
   const inputStyle = {
     backgroundColor: isCorrect ? '#c8f7c5' : 'white',
     padding: '5px',
@@ -94,9 +80,7 @@ function Task({ task, onCorrect, resetSignal }) {
 
   return (
     <div style={{ marginBottom: '10px' }}>
-      {/* Если хочешь, можно раскомментировать для показа текста задания */}
       <strong>{task.id}</strong>
-       
 
       {task.audio && (
         <img
@@ -114,7 +98,7 @@ function Task({ task, onCorrect, resetSignal }) {
           }}
         />
       )}
-      <strong>{task.text}</strong> 
+      <strong>{task.text}</strong>
       {isCorrect && (
         <div className="correct-answer">
           {answer}
@@ -135,19 +119,6 @@ function Task({ task, onCorrect, resetSignal }) {
       >
         OK
       </button>
-
-      {/* {!isListening ? (
-        <button onClick={handleVoiceStart} style={{ marginLeft: '10px' }}>
-          🎙️ Говори
-        </button>
-      ) : (
-        <button
-          onClick={handleVoiceStop}
-          style={{ marginLeft: '10px', backgroundColor: '#e74c3c', color: 'white' }}
-        >
-          ■ Стоп
-        </button>
-      )} */}
     </div>
   );
 }
