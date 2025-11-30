@@ -50,12 +50,12 @@ function MenuPage({ allTasks, onSelectRange }) {
     <div className="menu-container">
       <BackButton />
 
-      <h1 className="menu-title">Рисование</h1>
+      <h1 className="menu-title">Бокс</h1>
 
       <ProgressBar correct={totalCorrect} total={allTasks.length} />
 
       <p className="menu-progress-text">
-        Нарисовано {totalCorrect} картинок из {allTasks.length}
+         {totalCorrect} тренировок из {allTasks.length}
       </p>
 
       <div className="range-buttons-wrapper">

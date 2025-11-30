@@ -66,7 +66,7 @@ function Task({ task, onCorrect, resetSignal }) {
   const inputStyle = {
     backgroundColor: isCorrect ? '#c8f7c5' : 'white',
     padding: '5px',
-    marginLeft: '180px',
+    marginLeft: '50px',
     marginRight: '10px',
     width: '230px',
     marginBottom: '10px',
@@ -82,9 +82,10 @@ function Task({ task, onCorrect, resetSignal }) {
           src={process.env.PUBLIC_URL + task.audio}
           alt="изображение"
           style={{
-            width: '600px',
-            height: '400px',
+            width: '300px',
+            height: '200px',
             marginBottom: '10px',
+            marginLeft: '170px',
             alignContent: "center",
             margin: '25px',
             objectFit: 'cover',
