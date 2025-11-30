@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/risovanie/static/css/main.41ac5593.css",
-    "main.js": "/risovanie/static/js/main.4839da69.js",
-    "static/js/453.d37bcb50.chunk.js": "/risovanie/static/js/453.d37bcb50.chunk.js",
-    "index.html": "/risovanie/index.html",
-    "main.41ac5593.css.map": "/risovanie/static/css/main.41ac5593.css.map",
-    "main.4839da69.js.map": "/risovanie/static/js/main.4839da69.js.map",
-    "453.d37bcb50.chunk.js.map": "/risovanie/static/js/453.d37bcb50.chunk.js.map"
+    "main.css": "/box/static/css/main.202ca3c3.css",
+    "main.js": "/box/static/js/main.56dc0706.js",
+    "static/js/453.d37bcb50.chunk.js": "/box/static/js/453.d37bcb50.chunk.js",
+    "index.html": "/box/index.html",
+    "main.202ca3c3.css.map": "/box/static/css/main.202ca3c3.css.map",
+    "main.56dc0706.js.map": "/box/static/js/main.56dc0706.js.map",
+    "453.d37bcb50.chunk.js.map": "/box/static/js/453.d37bcb50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41ac5593.css",
-    "static/js/main.4839da69.js"
+    "static/css/main.202ca3c3.css",
+    "static/js/main.56dc0706.js"
   ]
 }
